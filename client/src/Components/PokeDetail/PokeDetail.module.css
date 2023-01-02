@@ -1,0 +1,119 @@
+/* Estilos para el fondo */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+.fondo {
+  background-image:url("https://w0.peakpx.com/wallpaper/837/309/HD-wallpaper-pokeball-space-minimal-pokemon-lets-go-poke-ball-monster-ball-pokemon-pokeball-minimalism-pokeball.jpg");
+  background-size:100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+
+
+
+  }
+  
+  /* Estilos para el título */
+  .title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 1rem;
+    margin: 1rem ;
+    padding: 1rem;
+    /* subrayar el texto */
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-thickness: 0.5rem;
+
+
+
+
+  }
+  
+  /* Estilos para los botones */
+  .buttoms {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    margin: 1rem;
+  }
+  
+  /* Estilos para el primer botón */
+  .buttom1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 255, 0);
+    color: #FFF;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 1rem;
+    padding: 1.5rem;
+  }
+  
+  /* Estilos para el contenedor de las estadísticas */
+  .statss {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 1rem;
+    color:white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.6rem;
+    
+  }
+  
+  /* Estilos para el centro de las estadísticas */
+  .statcenter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+  
+  /* Estilos para el nombre del Pokémon */
+  .name {
+    font-family: 'Press Start 2P', cursive;
+    font-size:3.5rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 1rem;
+    margin: 2rem ;
+    padding: 1rem;
+    /* subrayar el texto */
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-thickness: 0.5rem;
+
+  }
+  
+  /* Estilos para la imagen del Pokémon */
+  .statph {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* margin: 5rem; */
+    padding: 1rem;
+  }
+.statph:hover{ 
+  /* hover para agrandar la foto y tener una animacion */
+  transform: scale(1.2);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+
+  
+  

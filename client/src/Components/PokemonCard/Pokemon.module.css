@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.div {
+    height: 800px;
+    width: 800px;
+    border-radius: 0;
+    margin-bottom: 5rem;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.254);
+    /* Agregar borde animado */
+    border: none; /* Inicialmente, el borde es transparente */
+    border-radius: 15px;
+    
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 2px 2px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(5px);
+    background: #1f3d4738;
+    border: solid 0.5px rgb(255, 255, 255)
+  }
+  
+  @keyframes border-pulse {
+    /* En el primer 50% del tiempo, el borde se vuelve blanco */
+    50% {
+      border-color: rgba(255, 255, 255, 0.489);
+    }
+    /* En el último 50% del tiempo, el borde vuelve a ser transparente */
+    100% {
+      border-color: transparent;
+    }
+  }
+
+    .name {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    padding: 1rem 0; /* unificamos padding */
+    text-shadow: 0 0 2px solid black;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: start ;
+    justify-content: flex-start
+    
+    }
+
+    .idStyle {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.5rem;
+    text-shadow: 0 0 2px solid black;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: start ;/* centramos el texto */
+    background-color: rgba(255, 255, 255, 0);
+
+    }
+
+    .firstDiv,
+    .thirdDiv {
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: 50%;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     /* unificamos el radio de los bordes */
+    }
+
+    .firstDiv {
+    height: 70px;
+    width: 100%;
+    padding-top: 1rem;
+    
+    }
+
+    .thirdDiv {
+    padding-bottom: 2rem;
+    }
+
+    .forthDiv {
+    display: flex;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+        font-size: 2rem;
+        text-shadow: 0 0 2px solid black;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        text-align: center; /* centramos el texto */
+    }
+
+.photto,.phottot{
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+/* centrar foto */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 50px;   
+}
+
+
+.photto:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.poke-img   {height: 500px;
+  width: 500px;
+object-fit: cover;
+border-radius: 6px 6px 0px 0px;}

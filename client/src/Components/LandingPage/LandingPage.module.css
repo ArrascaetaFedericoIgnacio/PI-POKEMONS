@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.title{
+    height: auto;
+    width: 33%;
+    padding-top: 11rem;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    font-family: 'Press Start 2P', cursive;
+    
+}
+
+
+.bgimage {
+    background-image: url("https://images6.alphacoders.com/475/475761.jpg");
+    
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .frase {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  @media (max-width: 768px) {
+    .bgimage {
+      height: 50vh;
+    }
+  }
+  
