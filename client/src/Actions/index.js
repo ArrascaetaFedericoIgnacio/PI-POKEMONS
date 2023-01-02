@@ -1,4 +1,5 @@
 import axios from "axios";
+import { apiUrl } from "../config";
 import {
   SEARCH_POKE,
   GET_ALLPOKES,
@@ -21,7 +22,7 @@ import {
 // action para traer todos los pokemons
 export const getPokemons = () => {
   return async function (dispatch) {
-    const pokes = await axios.get("http://localhost:3001/pokemons", {});
+    const pokes = await axios.get(`${apiUrl}/pokemons`, {});
     return dispatch({
       type: GET_ALLPOKES,
       payload: pokes.data,
@@ -89,7 +90,7 @@ export const orderByHp = (payload) => {
 // action para filtrar por id
 export const getPokeByID = (id) => {
   return async function (dispatch) {
-    const myPoke = await axios.get("http://localhost:3001/pokemons/" + id);
+    const myPoke = await axios.get(`${apiUrl}/pokemons/` + id);
     console.log(myPoke);
     return dispatch({
       type: FILTER_BY_ID,
@@ -115,7 +116,7 @@ export const resetDetail = () => {
 // action para traer todos los tipos
 export const allTypes = () => {
   return async function (dispatch) {
-    const allMyTypes = await axios.get("http://localhost:3001/types");
+    const allMyTypes = await axios.get(`${apiUrl}/types`);
     return dispatch({
       type: ALL_PTYPES,
       payload: allMyTypes.data,
@@ -126,7 +127,7 @@ export const allTypes = () => {
 // CREATE POKEMON
 export const createPoke = (payload) => {
   return async function (dispatch) {
-    const newPoke = await axios.post("http://localhost:3001/pokemons", payload);
+    const newPoke = await axios.post(`${apiUrl}/pokemons`, payload);
     return dispatch({
       type: CREATE_POKE,
       payload: newPoke,
@@ -137,9 +138,7 @@ export const createPoke = (payload) => {
 // DELETE POKEMON
 export const deletePoke = (id) => {
   return async function (dispatch) {
-    const selectPoke = await axios.delete(
-      "http://localhost:3001/pokemons/" + id
-    );
+    const selectPoke = await axios.delete(`${apiUrl}/pokemons/` + id);
     return dispatch({
       type: DELETE_POKE,
       payload: selectPoke,
@@ -150,7 +149,7 @@ export const deletePoke = (id) => {
 //UPDATE POKEMON
 export const updatePoke = (id, payload) => {
   return async function (dispatch) {
-    await axios.put("http://localhost:3001/pokemons/" + id, payload);
+    await axios.put(`${apiUrl}/pokemons/` + id, payload);
     return dispatch({
       type: UPDATE_POKE,
     });
