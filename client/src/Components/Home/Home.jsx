@@ -241,7 +241,7 @@ export default function Home() {
           </p>
         </div>
         <div className={Style.botonReset}>
-          <button onClick={(e) => refreshPage()} className={Style.btn}>
+          <button onClick={(e) => refreshPage(e)} className={Style.btn}>
             Reset
           </button>
         </div>
