@@ -15,7 +15,7 @@ import {
   setPage,
 } from "../../Actions";
 import Pokemon from "../PokemonCard/Pokemon";
-import psyduck from "../images/PSYDUCKIDO.webp";
+
 import Paginado from "./Paginado";
 import snorlax from "../images/SNORLAXSLEEP.jpg";
 import { NavLink } from "react-router-dom";
@@ -43,40 +43,6 @@ export default function Home() {
   const showPokemons = allPokemons.slice(firstIndex, lastIndex);
   const totalPages = Math.ceil(allPokemons?.length / pokePages);
   console.log(firstIndex, lastIndex, showPokemons, totalPages);
-
-  // const howManyGames = 15;
-  // const lastIndex = page * howManyGames;
-  // const firstIndex = lastIndex - howManyGames;
-
-  // const showGames = videogames.slice(firstIndex, lastIndex);
-
-  // const totalPages = Math.ceil(videogames?.length / howManyGames);
-
-  //PAGINADO
-
-  // // state para la pagina actual y lo seteo en 1
-  // const [currentPage, setCurrentPage] = useState(1);
-  // // state para los pokemones por pagina
-  // const [pokemonsPerPage] = useState(12);
-
-  // // index del ultimo pokemon de la pagina
-  // // la pagina actual * los pokemones por pagina
-  // const indexOfLastPokemon = currentPage * pokemonsPerPage;
-
-  // // index del primer pokemon de la pagina
-  // const indexOfFirstPokemon = indexOfLastPokemon - pokemonsPerPage;
-
-  // // slice para mostrar los pokemones por pagina
-  // //el slice me devuelve un array con los pokemones de la pagina actual
-  // //le paso el indice del primer y del ultimo personaje
-  // const currentPokemon = allPokemons.slice(
-  //   indexOfFirstPokemon,
-  //   indexOfLastPokemon
-  // );
-
-  // const paginado = (pageNumber) => {
-  //   setCurrentPage(pageNumber);
-  // };
 
   // useEffect para traer los pokemones
   useEffect(() => {
@@ -113,6 +79,8 @@ export default function Home() {
     setReloadUsers((prevState) => !prevState);
   };
   // funcion para manejar el filtro por creacion
+  // este handle despaha la accion de filtrar por creacion y usa el setReloadUsers para recargar la pagina
+  //luego despacha la accion de setPage para setear la pagina en 1
   const handleFilterByCreation = (e) => {
     e.preventDefault();
     dispatch(filterPoke(e.target.value));
@@ -167,12 +135,7 @@ export default function Home() {
     dispatch(getPokemons());
     setReloadUsers((prevState) => !prevState);
     dispatch(setPage(1));
-    // setear todas las value de options por defecto
-
-    //resetear las options de los select
   };
-
-  //reset selectors
 
   return (
     <div className={Style.background}>
@@ -201,11 +164,6 @@ export default function Home() {
             Create Pokemon
           </NavLink>
         </>
-        {/* <>
-          <NavLink to="/about" className={Style.lists}>
-            About me
-          </NavLink>
-        </> */}
       </div>
       <div className={Style.filterContainer}>
         <div class={Style.titleFilter}>FILTERS</div>
@@ -283,7 +241,7 @@ export default function Home() {
           </p>
         </div>
         <div className={Style.botonReset}>
-          <button onClick={refreshPage} className={Style.btn}>
+          <button onClick={(e) => refreshPage()} className={Style.btn}>
             Reset
           </button>
         </div>

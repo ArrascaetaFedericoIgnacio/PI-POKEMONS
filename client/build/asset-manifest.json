@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.daa31633.chunk.css",
+    "main.js": "/static/js/main.8f6c4b4f.chunk.js",
+    "main.js.map": "/static/js/main.8f6c4b4f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.750ef72d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.750ef72d.js.map",
+    "static/js/2.3465e3b5.chunk.js": "/static/js/2.3465e3b5.chunk.js",
+    "static/js/2.3465e3b5.chunk.js.map": "/static/js/2.3465e3b5.chunk.js.map",
+    "static/js/3.9e2439e0.chunk.js": "/static/js/3.9e2439e0.chunk.js",
+    "static/js/3.9e2439e0.chunk.js.map": "/static/js/3.9e2439e0.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.daa31633.chunk.css.map": "/static/css/main.daa31633.chunk.css.map",
+    "static/js/2.3465e3b5.chunk.js.LICENSE.txt": "/static/js/2.3465e3b5.chunk.js.LICENSE.txt",
+    "static/media/PSYDUCKIDO.0696fbdc.webp": "/static/media/PSYDUCKIDO.0696fbdc.webp",
+    "static/media/SNORLAXSLEEP.d7f95ccf.jpg": "/static/media/SNORLAXSLEEP.d7f95ccf.jpg",
+    "static/media/back-svgrepo-com.02550cf7.svg": "/static/media/back-svgrepo-com.02550cf7.svg",
+    "static/media/hotmailogo.83823662.jpg": "/static/media/hotmailogo.83823662.jpg",
+    "static/media/linkedinlogo.af939eb0.webp": "/static/media/linkedinlogo.af939eb0.webp",
+    "static/media/next-svgrepo-com.e3a627e5.svg": "/static/media/next-svgrepo-com.e3a627e5.svg",
+    "static/media/pokemontitle.16d0ce56.png": "/static/media/pokemontitle.16d0ce56.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.750ef72d.js",
+    "static/js/2.3465e3b5.chunk.js",
+    "static/css/main.daa31633.chunk.css",
+    "static/js/main.8f6c4b4f.chunk.js"
+  ]
+}
