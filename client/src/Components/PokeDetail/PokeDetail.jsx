@@ -6,6 +6,7 @@ import {
   getPokeByID,
   getPokemons,
   resetDetail,
+  setPage,
 } from "../../Actions";
 
 // Photos
@@ -14,6 +15,8 @@ import {
 import Style from "./PokeDetail.module.css";
 
 export default function PokeDetail(props) {
+  // importar estado de pages de redux
+
   const dispatch = useDispatch();
   const history = useHistory();
 
@@ -31,14 +34,17 @@ export default function PokeDetail(props) {
     //llamar nuevamente a todos los pokes
     dispatch(getPokemons());
     history.push("/home");
+    dispatch(setPage(1));
   };
   const handleUpdate = () => {
     console.log("hola");
+    dispatch(setPage(1));
     history.push(`/createPokemon/${props.match.params.id}`);
   };
 
   const handleBack = () => {
     dispatch(resetDetail());
+    dispatch(setPage(1));
     history.push("/home");
   };
   return (
