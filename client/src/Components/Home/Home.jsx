@@ -59,8 +59,9 @@ export default function Home() {
     dispatch(setPage(1));
   };
 
-  function refreshPage() {
-    window.location.reload();
+  const urlPoke = "https://fedepipoke.netlify.app/home";
+  function refreshPage(urlPoke) {
+    window.location.reload(urlPoke);
   }
 
   //HANDLES
@@ -241,7 +242,7 @@ export default function Home() {
           </p>
         </div>
         <div className={Style.botonReset}>
-          <button onClick={(e) => refreshPage(e)} className={Style.btn}>
+          <button onClick={(e) => refreshPage(urlPoke)} className={Style.btn}>
             Reset
           </button>
         </div>
