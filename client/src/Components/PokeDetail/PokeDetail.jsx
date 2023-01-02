@@ -9,7 +9,6 @@ import {
 } from "../../Actions";
 
 // Photos
-import psyduck from "../images/PSYDUCKIDO.webp";
 
 //Styles
 import Style from "./PokeDetail.module.css";
@@ -92,7 +91,6 @@ export default function PokeDetail(props) {
       ) : (
         <div>
           <div>LOADING...</div>
-          <img src={psyduck} alt="loading" />
         </div>
       )}
     </div>
